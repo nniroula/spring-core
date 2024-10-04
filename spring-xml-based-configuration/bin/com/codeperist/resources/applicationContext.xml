@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- bean definitions to represent bean objects -->
+    
+    <!--  your package name dot your class name-->
+    <!-- Each name fields are variables in your POJO class to provide default values for bean object -->
+    <bean class="com.codepersist.beans.Student" id="stdObjectId">
+    	<property name="name" value="Nabin" />
+    	<property name="email" value="testxml@xml" />
+    	<property name="rollno" value="10001" />
+    </bean>
+    
+    <bean class="com.codepersist.beans.Student" id="stdObjectTwoId" >
+    	<property name="name" value="Steve" />
+    	<property name="rollno" value="1" />
+    	<property name="email" value="test@test.com" />
+    </bean>
+
+</beans>
